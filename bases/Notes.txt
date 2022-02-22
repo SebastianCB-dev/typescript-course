@@ -1,0 +1,24 @@
+tsc <File>: Transpilar a JavaScript
+tsc : Tranpilar todos los archivos ts a JavaScript
+
+tsc init: descargar el tsconfig
+tsc --watch: Estar atento a los cambios.
+
+#### TS CONFIG ###
+- Depuración de TypeScript en el navegador:
+"sourceMap": true,                           /* Generates corresponding '.map' file. */
+
+- Remover comentarios cuando transpile 
+"removeComments": true,                      /* Do not emit comments to output. */
+
+- Excluir directorios o incluirlos (Abajo del compiler options)
+  "exclude": [
+    "node_modules2"
+  ],
+  "include": [
+    "node_modules"
+  ]
+
+- Convertir toda la aplicación a un archivo 
+Revisar include eso son los que tomara. Si se desea juntar todo en un archivo dejar include vacio
+"outFile": "./main.js",                             /* Concatenate and emit output to single file. */
